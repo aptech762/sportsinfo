@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+/* FOR BACKGROUND COLOR OF NAV BAR AND SPORTS MENU */
+.mynav {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+    z-index: 999;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+    border-bottom: 2px solid #0DA1FF;
+}
+
+
+/* Main section of players */
+.main-section {
+    margin-top: 81px;
+}
+
+/* MAIN RIGHT SIDE CONTENT */
+.main-content {
+    margin-top: 40px;
+    width: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
+    left: 20%;
+    display: none;
+}
+
+/* SIDE BAR */
+.side-bar {
+    width: 19%;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 90.6%;
+    /* background-color: rgb(49,49,49); */
+
+}
+
+.hamburger {
+    color: white;
+    font-size: 22px;
+}
+
+.hamburger:active {
+    color: black;
+}
+
+/* LIST OF PLAYERS IN SIDE BAR */
+.players-list {
+    list-style-type: none;
+
+}
+
+.players-list>li {
+    padding-bottom: 10px;
+}
+
+.players-link {
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #0DA1FF;
+}
+
+.players-link:hover {
+    text-decoration: underline;
+    color: #0DA1FF;
+    padding-left: 5px;
+    transition: all 0.4s;
+}
+
+/* ACTIVE CLASS FOR EACH PLAYER SECTION */
+.show-player {
+    display: block;
+}
+
+/* INTRODUCTION IMAGES OF PLAYERS */
+.intro-img {
+    width: 100%;
+    height: 400px;
+}
+
+.footer-container {
+    z-index: 998;
+    position: relative;
+}
+
+/* ///////////////////////////////// MEDIA QUERIES //////////////////////////// */
+/* ////////// MAX-WIDTH:991px ////////////////// */
+@media screen and (max-width:991px) {
+    .main-section {
+        margin-top: 50px;
+    }
+
+    .main-content {
+        position: static;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .side-bar {
+        margin-top: -50px;
+        position: static;
+        height: auto;
+        box-shadow: none;
+
+    }
+
+    /* To CHANGE THE BACKGROUND OF RESPONSIVE SIDEBAR */
+    .offcanvas-body {
+        background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        color: white;
+    }
+
+}
+
+/* ////////// MAX-WIDTH:767px ////////////////// */
+@media screen and (max-width:767px) {
+    .intro-img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* ////////// MAX-WIDTH:607px ////////////////// */
+@media screen and (max-width:607px) {
+    .intro-img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* ////////// MAX-WIDTH:455px ////////////////// */
+@media screen and (max-width:455px) {
+    .intro-img {
+        width: 100%;
+        height: 200px;
+    }
+}

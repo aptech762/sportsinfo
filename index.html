@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS INFO</title>
+    <!-- Bootstrap file link -->
+    <link rel="stylesheet" href="./BOOTSTRAP/bootstrap.min.css">
+
+    <!-- CSS Page Link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
+    <!-- FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- FOR GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic"
+        rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav id="mynav" class="navbar navbar-expand-lg fixed-top mynav ">
+        <div class="container-fluid">
+            <a style="font-size: 25px; color: white;" class="navbar-brand" href="#">SPORTS <span
+                    style="color: #0DA1FF;">INFO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i style="color:#0DA1FF; font-size: 25px ;" class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav links-container ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-sport" class="nav-link " aria-current="page" href="./PAGES/sports.html">SPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-player" class="nav-link " aria-current="page" href="./PAGES/players.html">PLAYERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./PAGES/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./PAGES/contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+                <form autocomplete="off" class="d-flex" role="search">
+                    <input list="sports-list" id="search" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-primary" type="button"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <datalist id="sports-list">
+                        <option value="Football"></option>
+                        <option value="Cricket"></option>
+                        <option value="Judo"></option>
+                        <option value="Tennis"></option>
+                        <option value="Motorcycle Racing"></option>
+                        <option value="VolleyBall"></option>
+                        <option value="Golf"></option>
+                        <option value="Chess"></option>
+                        <option value="Billiards"></option>
+                        <option value="Badminton"></option>
+                        <option value="Swimming"></option>
+                        <option value="Athletics"></option>
+                        <option value="Hockey"></option>
+                    </datalist>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+
+
+    <!-- BANNER -->
+    <section class="banner background">
+        <div class="banner-container">
+            <div class="heading-container">
+
+                <h1 class="banner-heading"
+                    style="color: white; text-align: center;font-size: 40px; font-weight: bold;line-height: 62px;">GET
+                    ALL SPORTS INFORMATION ON ONE PLATFORM</h1>
+            </div>
+        </div>
+    </section>
+    <!-- END OF BANNER -->
+
+
+    <!--ALL SPORTS MENU -->
+    <section class="dropdown-section">
+
+        <div class="menu-dropdown">
+            <h6 style="color: white;">See All Sports <i style="cursor: pointer;" id="showdropdown"
+                    class="fa-solid fa-caret-down"></i></h6>
+        </div>
+        <div id="res-menu" class="menu">
+            <ul id="res-list" class="list">
+                <li id="footballs" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">FootBall</a></li>
+                <li id="crickets" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Cricket</a></li>
+                <li id="judos" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Judo</a></li>
+                <li id="tenniss" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Tennis</a></li>
+                <li id="rac" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Motorcycle Racing</a>
+                </li>
+                <li id="volley" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Volleyball</a></li>
+                <li id="golfs" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Golf</a></li>
+                <li id="chesss" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Chess</a></li>
+                <li id="billi" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Billiards</a></li>
+                <li id="badmintons" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Badminton</a>
+                </li>
+                <li id="swimmings" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Swimming</a></li>
+                <li id="athleticss" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Athletics</a>
+                </li>
+                <li id="hockeys" class="menu-items"><a href="./PAGES/sports.html" class="menu-links">Hockey</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- END OF ALL SPORTS MENU -->
+
+    <!--SPORTS CARDS -->
+    <section class="cards-section">
+
+        <div class="cards-heading py-lg-5 pt-4 mt-lg-0 s">
+            <hr>
+            <h2 style="text-align: center;">TOP <span style="color:#0DA1FF ;">SPORTS</span> </h2>
+            <hr>
+        </div>
+        <div class="container-fluid cards-container">
+            <div class="row d-flex justify-content-center">
+                <!-- Card-one -->
+                <div class="col-12 col-lg-6 card-one-container mx-3 my-4 my-lg-0 p-0">
+                    <div id="focard" class="card-one">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">FOOTBALL</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Football is one of the most
+                            popular games in the world. It is a game of excitement and thrill as nobody knows at which
+                            moment match will take the turn.....</p>
+                    </div>
+                </div>
+                <!-- Card-Two -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-0 my-4 mx-3 p-0">
+                    <div id="cricard" class="card-two">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">CRICKET</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Cricket is a sport which is
+                            played between two teams of eleven players each (Cricket). One team, which is batting, tries
+                            to
+                            score runs, while the other team is fielding, and tries to prevent this....</p>
+                    </div>
+                </div>
+                <!-- Card-Three -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-5 my-4 mx-3 p-0">
+                    <div id="tcard" class="card-three">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">TENNIS</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Tennis is an Olympic sport
+                            and is played at all levels of society and at all ages. The sport can be played by anyone
+                            who can hold a racket, including wheelchair users.</p>
+                    </div>
+                </div>
+                <!-- Card-Four -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-5 my-4 mx-3 p-0">
+                    <div id="athcard" class="card-four">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">ATHLETICS</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Athletics, a sport that was
+                            founded in antiquity, has continued to adapt through the centuries, offering a dynamic,
+                            life-enhancing sport the sport of competing in track and field events.......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+
+                <button id="moresportsbtn" class="more-sports"><a class="more-sports-anchor"
+                        href="./PAGES/sports.html">View More Sports</a> </button>
+            </div>
+        </div>
+        <!-- END OF SPORTS CARD -->
+
+        <!-- PLAYERS CARD -->
+        <div class="cards-heading py-lg-5 mt-5">
+            <hr>
+            <h2 style="text-align: center;">TOP <span style="color:#0DA1FF ;">PLAYERS</span> </h2>
+            <hr>
+        </div>
+        <div class="container-fluid cards-container">
+            <div class="row d-flex justify-content-center">
+                <!-- Card-five -->
+                <div class="col-12 col-lg-6 card-one-container mx-3 my-4 my-lg-0 p-0">
+                    <div id="roncard" class="card-five">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">CHRISTIANO RONALDO</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Cristiano Ronaldo dos Santos
+                            Aveiro (born 5 February 1985), better known as Cristiano Ronaldo, is a Portuguese
+                            professional footballer who plays as a forward........</p>
+                    </div>
+                </div>
+                <!-- Card-six -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-0 my-4 mx-3 p-0">
+                    <div id="tencard" class="card-six">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">SACHIN TENDULKAR</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Sachin Ramesh Tendulkar is
+                            regarded as one of the greatest batsmen in the history of cricket ............</p>
+                    </div>
+                </div>
+                <!-- Card-seven -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-5 my-4 mx-3 p-0">
+                    <div id="boltcard" class="card-seven">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">USAIN BOLT</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Usain St. Leo Bolt is a
+                            retired Jamaican sprinter, widely considered to be the greatest sprinter of all time.......
+                        </p>
+                    </div>
+                </div>
+                <!-- Card-eight -->
+                <div class="col-12 col-lg-6 card-one-container  my-lg-5 my-4 mx-3 p-0">
+                    <div id="fedcard" class="card-eight">
+
+                    </div>
+                    <div class="card-content">
+
+                        <h4 style="color: white; text-align: center;" class="card-caption">ROGER FEDERER</h4>
+                        <p style="color: white; text-align: center;" class="card-para px-2">Roger Federer is a Swiss
+                            former professional tennis player. He was ranked world No. 1 by the Association of Tennis
+                            Professionals (ATP) for 310 weeks.......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pb-5">
+
+                <button id="moreplayersbtn" class="more-sports"><a class="more-sports-anchor"
+                        href="./PAGES/players.html">View More Players</a> </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER SECTION  -->
+    <footer class="footer-container">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-lg-3 ps-3 py-4 footer-section">
+                    <h2>SPORTS <span style="color:#0DA1FF ;">INFO</span></h2>
+                    <p class="pt-3" style="text-align: justify; font-size: 13px; opacity: 0.7;">Infocom is a multi
+                        national company that builds informative sites. <br><span
+                            style="color:#0DA1FF ;">sportsinfo.com</span> is the platform where the user will get
+                        information related to sports.</p>
+                </div>
+
+                <div class="col-12 col-lg-3 py-4 ps-lg-4  footer-section">
+                    <h5 class="ps-lg-4">TOP <span style="color:#0DA1FF ;">SPORTS</span></h5>
+                    <ul class="ps-0 ps-lg-4">
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html"
+                                id="fFootball">Football</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html"
+                                id="fCricket">Cricket</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html"
+                                id="fTennis">Tennis</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html"
+                                id="fAthletics">Athletics</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html" id="fGolf">Golf</a>
+                        </li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/sports.html"
+                                id="fSwimming">Swimming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 ps-lg-4 py-4 footer-section">
+                    <h5>TOP <span style="color:#0DA1FF ;">PLAYERS</span></h5>
+                    <ul class="ps-0 ps-lg-1">
+
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html"
+                                id="fRonaldo">Ronaldo</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html"
+                                id="fTendulkar">Tendulkar</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html"
+                                id="fFederer">Federer</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html" id="fBolt">Bolt</a>
+                        </li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html" id="fTiger">Tiger
+                                Woods</a></li>
+                        <li class="footer-list"><a class="footer-links" href="./PAGES/players.html"
+                                id="fMarquez">Marquez</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 py-4">
+                    <h5>CONTACT <span style="color:#0DA1FF ;">INFO</span> </h5>
+                    <p class="pt-3" style="color: white; font-size: 14px; opacity: 0.7;"><i style="color: #0DA1FF;"
+                            class="fa-solid fa-envelope"></i> <a style="color: white;" class="info-link"
+                            href="mailto:sportsinfo@gmail.com">sportsinfo@gmail.com</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-location-dot"></i><span
+                            style="margin-left: 20px; opacity: 0.7; font-size: 13px;">ABC street, Karachi</span> </p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-phone"></i> <a
+                            class="info-link" href="tel:+92%73454%3280">+92 73454 3280</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-fax"></i> <a
+                            class="info-link" href="tel: +123%4446%8889">+123 4446 8889</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="pb-4 mb-0" style="text-align: center; opacity: 0.7;">All Rights Reserved by &#169; sportsinfo 2022</p>
+    </footer>
+    <!-- END OF FOOTER SECTION -->
+
+    <!-- JAVASCRIPT LINKS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./BOOTSTRAP/bootstrap.min.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/sport.js"></script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../IMAGES/aboutbackgrounimg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: black;
+}
+
+.about-content {
+    width: 50%;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width:767px) {
+    .about-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .about-content {
+        width: 100%;
+    }
+}

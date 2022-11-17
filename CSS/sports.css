@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+ul {
+    font-family: Poppins;
+}
+
+/* NAVIGATION BAR */
+.mynav {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+/* SPORTS MENU */
+.menu {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+    border-bottom: 2px solid #0DA1FF;
+}
+
+/* SET THE FONT FAMILY OF PARA */
+p {
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+/* FOR CHANGING BACKGROUND COLOR OF DROPDOWN  */
+.dropdown-section {
+
+    background-color: transparent !important;
+}
+
+/* FOR MAKING DISPLAY NONE OF EVERY SPORT SECTION  */
+.sports-section {
+    display: none;
+
+}
+
+/* THIS VISIBLE CLASS IS USED IN JAVASCRIPT TO MAKE DISPLAY BLOCK OF PARTICULAR SPORT */
+.visibletwo {
+    display: block;
+    margin-top: 80px;
+}
+
+/* THIS CLASS IS USED TO SHOW THAT WHICH SPORT LINK OR SPORT SECTION IS ACTIVE NOW */
+.activetwo {
+    color: #0DA1FF !important;
+}
+
+/* FOR MENU */
+.menu-items {
+    color: white;
+}
+
+.menu-items:hover {
+    cursor: pointer;
+    color: #0DA1FF;
+}
+
+/* Sport Menu */
+
+/* FOOTBALL SECTION */
+/* Introduction */
+.sport-heading {
+    text-align: center;
+
+}
+
+.content {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.content-child {
+
+    text-align: justify;
+}
+
+.fb-img {
+    height: 350px;
+    width: 300px;
+}
+
+/* Position */
+.position-image {
+    width: 100%;
+    height: 450px;
+}
+
+/* Rules */
+.fb-img-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.football-img {
+    width: 100%;
+    height: 700px;
+}
+
+/* History */
+.old-pic {
+    width: 100%;
+    height: 400px;
+}
+
+/* worldcup */
+.worldcup-img {
+    width: 100%;
+    height: 500px;
+}
+
+/*Records */
+.messi-img {
+    width: 100%;
+    height: 700px;
+}
+
+.goalkeeper-img {
+    width: 100%;
+    height: 500px;
+}
+
+.score-img {
+    float: left;
+    width: 300px;
+
+
+}
+
+/* Member Countries */
+.flags-picture {
+    width: 100%;
+    height: 450px;
+}
+
+/* Players Links */
+.player-links {
+    display: flex;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 300px;
+    align-items: center;
+}
+
+.picture-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.picture-container:hover {
+    cursor: pointer;
+    transform: translate(0);
+
+    opacity: 0.8;
+
+    transform: scale(1.1);
+}
+
+.picture-container:hover .player-name {
+    transform: translateY(0);
+}
+
+.player-picture {
+    height: 100%;
+}
+
+.player-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transform: translateY(110%);
+    transition: all 0.5s;
+}
+
+/* Back TO Top Link */
+.back {
+    text-decoration: none;
+    font-size: 40px;
+    opacity: 0.5;
+    color: white;
+    padding: 3px 5px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: gray;
+}
+
+.back:hover {
+    cursor: pointer;
+    background-color: gray;
+    opacity: 1;
+    color: white;
+
+
+}
+
+/* CRICKET SECTION */
+.cricintro-img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Rules */
+.cricrules-img {
+    width: 100%;
+    height: 600px;
+}
+
+/* JUDO SECTION */
+/* Rules */
+.judorules-img {
+    width: 100%;
+    height: 550px;
+}
+
+/* CHESS SECTION */
+.strategy-image {
+    display: flex;
+    width: 300px;
+    height: 350px;
+
+}
+
+/* GOLF SECTION */
+.player-links-three {
+    width: 40%;
+}
+
+/* SWIMMING */
+.swimmingrules-img {
+    width: 100%;
+    height: 400px;
+}
+
+/* footer display none and display block with java script beacuse on page reload footer position create problems */
+.footer-container {
+    display: none;
+}
+
+/* ///////////////////////////// MEDIA QUERIES  ///////////////////////////////// */
+/* ////////// MAX-WIDTH:991px ////////////////// */
+@media screen and (max-width:991px) {
+    .visibletwo {
+        margin-top: 0px;
+    }
+
+    .football-img {
+        /* width: 800px; */
+        height: 500px;
+    }
+
+    .worldcup-img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .messi-img {
+        width: 100%;
+        height: 650px;
+    }
+
+    .goalkeeper-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .player-links {
+        width: 90%;
+    }
+
+    .flags-picture {
+        width: 100%;
+        height: 400px;
+    }
+
+    .cricrules-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .judorules-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .player-links-three {
+        width: 40%;
+    }
+
+    .swimmingrules-img {
+        width: 100%;
+        height: 350px;
+    }
+
+
+
+}
+
+/* ////////// MAX-WIDTH:767px ////////////////// */
+@media screen and (max-width:767px) {
+    .content {
+        flex-direction: column;
+
+    }
+
+    .fb-img {
+        height: 350px;
+        width: 600px;
+    }
+
+    .position-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .football-img {
+        /* width: 500px; */
+        height: 300px;
+    }
+
+    .worldcup-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .messi-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .player-links {
+        width: 100%;
+    }
+
+    .flags-picture {
+        width: 100%;
+        height: 300px;
+    }
+
+    .cricrules-img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .judorules-img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .player-links-three {
+        width: 40%;
+    }
+
+    .swimmingrules-img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* ////////// MAX-WIDTH:607px ////////////////// */
+@media screen and (max-width:607px) {
+    .fb-img {
+        height: 250px;
+        width: 450px;
+    }
+
+    .position-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .worldcup-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .messi-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .player-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 680px;
+    }
+
+    .player-links-two {
+        height: 480px !important;
+    }
+
+    .cricrules-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .judorules-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .player-links-three {
+        width: 40%;
+        height: 400px;
+    }
+
+    .swimmingrules-img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* ////////// MAX-WIDTH:455px ////////////////// */
+@media screen and (max-width:455px) {
+    .fb-img {
+        height: 250px;
+        width: 300px;
+    }
+
+    .position-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .football-img {
+        /* width: 300px; */
+        height: 200px;
+    }
+
+    .old-pic {
+        width: 100%;
+        height: 200px;
+    }
+
+    .worldcup-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .messi-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .goalkeeper-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .para-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .score-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .flags-picture {
+        width: 100%;
+        height: 200px;
+    }
+
+    .back {
+        font-size: 25px;
+    }
+
+    .cricrules-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .judorules-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .player-links-three {
+        width: 40%;
+        height: 400px;
+    }
+
+    .swimmingrules-img {
+        width: 100%;
+        height: 150px;
+    }
+}

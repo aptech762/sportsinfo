@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed";
+    color: white;
+
+}
+
+p {
+    font-family: Poppins;
+}
+
+/*////////////////////////////////// NAVIGATION BAR/////////////////////// */
+.mynav {
+    background-color: transparent;
+    z-index: 99999;
+}
+
+/* Navbar Lists */
+.links-container {
+    width: 60%;
+}
+
+.nav-item {
+    padding-left: 18px;
+
+}
+
+.nav-link {
+    color: white;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: #0DA1FF;
+    
+}
+
+.active {
+    color: #0DA1FF !important;
+}
+
+/* this class change the background color of navbar on scrolling */
+.changebg {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+
+/* ////////////////////////////BANNER ////////////////////////////////*/
+.banner-container {
+    height: 620px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.5) url("../IMAGES/banner.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    animation-name: changeBackground;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeBackground {
+
+    0% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/banner.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    20% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/banner2.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    40% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/tennisintro.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    60% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/igf.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    80% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/motointro.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0.5) url("../IMAGES/banner.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+}
+
+.heading-container {
+    width: 40%;
+
+}
+
+/*/////////////////// SPORTS MENU ////////////////////*/
+.dropdown-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+    border-bottom: 2px solid #0DA1FF;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-links {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-links:hover {
+    color: #0DA1FF;
+    transition: all 0.4s;
+
+}
+
+.menu-dropdown {
+    display: none;
+}
+
+.visibletwo {
+    display: block;
+    margin-top: 80px;
+}
+
+
+
+/* IMAGE CARDS */
+
+.cards-section {
+    background: rgba(0, 0, 0, 0.5) url("../IMAGES/sportsbackground2.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-one-container {
+    height: 403px;
+    /* width: 456px; */
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-one {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/cardimageone.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+
+}
+
+.card-one:hover {
+
+
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/cardimageone.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0%;
+
+    z-index: 9;
+    width: 100%;
+}
+
+/* this style is for text display on hover effect */
+.card-content {
+    transform: translateY(110%);
+    transition: all 0.4s;
+
+}
+
+.card-one-container:hover .card-content {
+    transform: translateY(0);
+    background-color: rgb(13, 161, 255, 0.3);
+}
+
+/* Card Two */
+
+.card-two {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/cardimagetwo.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+
+}
+
+.card-two:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/cardimagetwo.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/* Card Three */
+.card-three {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/cardimagethree.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+
+}
+
+.card-three:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/cardimagethree.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/* Card Four */
+.card-four {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/cardimagefour.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+
+}
+
+.card-four:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/cardimagefour.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+.more-sports {
+
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    background-color: #0DA1FF;
+    border: none;
+    color: white;
+}
+
+.more-sports:hover {
+    background-color: #1390dd;
+}
+
+.more-sports-anchor {
+    text-decoration: none;
+    color: white;
+    padding: 3% 20%;
+}
+
+.more-sports-anchor:hover {
+    color: white;
+}
+
+/* Card Five */
+.card-five {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/roninternational.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+}
+
+.card-five:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/roninternational.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/* Card Six */
+.card-six {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/tendulkarinternational.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+}
+
+.card-six:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/tendulkarinternational.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/* Card Seven */
+.card-seven {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/boltcareer.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+}
+
+.card-seven:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/boltcareer.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/* Card Eight */
+.card-eight {
+    height: 100%;
+    width: 100%;
+    background: url("../IMAGES/fedrer.jpeg");
+    background-size: cover;
+    transition: all 0.4s;
+    transform: scale(1);
+    background-position: center;
+}
+
+.card-eight:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) url("../IMAGES/fedrer.jpeg");
+    transform: scale(1.1);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+/*/////////////////////////// FOOTER ////////////////////////////////*/
+.footer-container {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-top: 5px;
+
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+    color: #0DA1FF;
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+
+.info-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    opacity: 0.7;
+    font-size: 13px;
+    font-family: Poppins;
+}
+
+.info-link:hover {
+    color: #0DA1FF;
+
+}
+
+/*///////////////////////////// MEDIA QUERY ////////////////////////////////*/
+/*////////// max-width 1400px ////////////////*/
+@media screen and (max-width:1400px) {
+
+    /* For setting height of banner background picture */
+    .banner-container {
+        height: 750px;
+    }
+}
+
+
+/*////////////////// max-width 1200px ////////////////*/
+@media screen and (max-width:1200px) {
+
+    /* For setting height of banner background picture */
+    .banner-container {
+        height: 650px;
+    }
+
+}
+
+
+/*////////////////// max-width 991px ////////////////*/
+@media screen and (max-width:991px) {
+
+    /* Responsive Navbar */
+    .mynav {
+        background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        color: white;
+    }
+
+    .links-container {
+        width: 100%;
+
+    }
+
+    .nav-item {
+        border-bottom: 2px solid white !important;
+        width: 100%;
+
+    }
+
+    /* For setting margin of unordered lists */
+    .links-container {
+        margin-top: 10px;
+
+    }
+
+    /* For setting height of banner background picture */
+    .banner-container {
+        height: 500px;
+    }
+
+    /* For Responsive Sports Menu */
+    .dropdown-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        position: relative;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        height: 0px;
+        width: 0%;
+        height: 600px;
+        opacity: 1;
+        width: 100% !important;
+        position: absolute !important;
+        top: 60%;
+        animation-name: opacity;
+        animation-duration: 0.9s;
+        z-index: 998;
+        display: none;
+
+        overflow: hidden;
+    }
+
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu-dropdown {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+        background: rgba(0, 0, 0, 0.7) url("../IMAGES/sportsbackground2.jpeg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        color: white;
+        border-bottom: 2px solid #0DA1FF;
+        height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        display: none;
+
+    }
+
+    .menu-items {
+        margin-top: 15px;
+        margin-left: 10px;
+        border-bottom: 2px solid white;
+    }
+
+    .visible {
+        display: block;
+    }
+
+
+    /* For Setting Width of Cards */
+    .card-one-container {
+        width: 80%;
+    }
+
+    /* For Footer */
+    .footer-section {
+        border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+    }
+}
+
+
+/*////////////////// max-width 767px ////////////////*/
+@media screen and (max-width:767px) {
+
+    /* Responsive Navbar */
+    .mynav {
+        background-color: rgb(49, 49, 49);
+    }
+
+    .links-container {
+        width: 100%;
+
+    }
+
+    .nav-item {
+        border-bottom: 2px solid white !important;
+        width: 100%;
+
+    }
+
+    /* For setting height of banner background picture */
+    .banner-container {
+        height: 400px;
+    }
+
+    /* BANNER-HEADING */
+    .heading-container {
+        width: 60%;
+
+    }
+}
+
+
+/*////////////////// max-width 480px ////////////////*/
+@media screen and (max-width:480px) {
+
+    /* For setting height of banner background picture */
+    .banner-container {
+        height: 350px;
+    }
+
+    /* BANNER-HEADING */
+    .heading-container {
+        width: 100%;
+
+    }
+
+    /* For Setting Height of cards */
+    .card-one-container {
+        height: 300px;
+    }
+}

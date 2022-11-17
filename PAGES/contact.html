@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details for Sports Info</title>
+    <!-- Bootstrap file link -->
+    <link rel="stylesheet" href="../BOOTSTRAP/bootstrap.min.css">
+
+    <!-- CSS Page Link -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+
+    <!-- FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- FOR GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic"
+        rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav id="mynav" class="navbar navbar-expand-lg fixed-top mynav ">
+        <div class="container-fluid">
+            <a style="font-size: 25px; color: white;" class="navbar-brand" href="#">SPORTS <span
+                    style="color: #0DA1FF;">INFO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i style="color:#0DA1FF; font-size: 25px ;" class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav links-container ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-sport" class="nav-link " aria-current="page" href="../PAGES/sports.html">SPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-player" class="nav-link " aria-current="page"
+                            href="../PAGES/players.html">PLAYERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../PAGES/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../PAGES/contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+                <form autocomplete="off" class="d-flex" role="search">
+                    <input list="sports-list" id="search" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-primary" type="button"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <datalist id="sports-list">
+                        <option value="Football"></option>
+                        <option value="Cricket"></option>
+                        <option value="Judo"></option>
+                        <option value="Tennis"></option>
+                        <option value="Motorcycle Racing"></option>
+                        <option value="VolleyBall"></option>
+                        <option value="Golf"></option>
+                        <option value="Chess"></option>
+                        <option value="Billiards"></option>
+                        <option value="Badminton"></option>
+                        <option value="Swimming"></option>
+                        <option value="Athletics"></option>
+                        <option value="Hockey"></option>
+                    </datalist>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+
+    <!--ALL SPORTS MENU -->
+    <section class="dropdown-section" style="background-color: rgb(49, 49, 49);">
+
+        <div class="menu-dropdown">
+            <h6 style="color: white;">See All Sports <i style="cursor: pointer;" id="showdropdown"
+                    class="fa-solid fa-caret-down"></i></h6>
+        </div>
+        <div id="res-menu" class="menu fixed-top">
+            <ul id="res-list" class="list">
+                <li id="footballs" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">FootBall</a>
+                </li>
+                <li id="crickets" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Cricket</a></li>
+                <li id="judos" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Judo</a></li>
+                <li id="tenniss" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Tennis</a></li>
+                <li id="rac" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Motorcycle Racing</a>
+                </li>
+                <li id="volley" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Volleyball</a></li>
+                <li id="golfs" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Golf</a></li>
+                <li id="chesss" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Chess</a></li>
+                <li id="billi" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Billiards</a></li>
+                <li id="badmintons" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Badminton</a>
+                </li>
+                <li id="swimmings" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Swimming</a>
+                </li>
+                <li id="athleticss" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Athletics</a>
+                </li>
+                <li id="hockeys" class="menu-items"><a href="../PAGES/sports.html" class="menu-links">Hockey</a></li>
+            </ul>
+        </div>
+    </section>
+     <!-- END OF SPORTS MENU -->
+
+    <div class="contact-intro">
+        <div class="contact-heading">
+            <h1 class="pt-3" style="color:#0DA1FF; padding-left: 8px;">Contact <span style="color:black;">Us</span>
+            </h1>
+        </div>
+        <div class="contact-desc py-4">
+            <p>Sports Info loves to hear from its visitors! One of the most important things we can do is learn from our
+                visitors’ experience with our website.</p>
+            <p>We welcome any and all feedback and look at every email carefully. Our Team members are anxiously
+                awaiting your emails at <a href="mailto:sportsinfo@gmail.com">sportsinfo@gmail.com</a></p>
+            <p>Please use our contact form below (or email <a
+                    href="mailto:sportsinfo@gmail.com">sportsinfo@gmail.com</a> ) and we will get back to you as soon as
+                possible.</p>
+        </div>
+    </div>
+
+   
+
+    <!-- CONTACT INFORMATION -->
+    <section class="contact-info">
+        <!-- Contact Form -->
+
+        <div id="cont" class="contact-container">
+
+            <div class="container form-container">
+                <form action="" class="contact-form">
+
+                    <div class="label">
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="error" id="errorN"></div>
+                    <div class="label">
+                        <input type="email" name="" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="error" id="errorE"></div>
+                    <div class="label">
+                        <input type="text" id="address" placeholder="Address">
+                    </div>
+                    <div class="error" id="errorA"></div>
+                    <div class="recommend py-3">
+                        <p style="color: white; ">Do You Recommend This Site To Others?</p>
+                        <input required type="radio" id="Yes" name="recommend_site" value="Yes">
+                        <label style="color: white;" for="Yes">Yes</label>
+                        <input type="radio" id="No" name="recommend_site" value="No">
+                        <label style="color: white;" for="Yes">No</label>
+                    </div>
+                    <div class="ratings py-3">
+                        <div class="ratings-para">
+
+                            <p class="px-3" style="color: white; text-align: center;">Was This Website information
+                                helpful for you?</p>
+                        </div>
+                        <div class="stars-container">
+
+                            <i id="star-one" class="fa-regular fa-star stars"></i>
+                            <i id="star-two" class="fa-regular fa-star stars"></i>
+                            <i id="star-three" class="fa-regular fa-star stars"></i>
+                            <i id="star-four" class="fa-regular fa-star stars"></i>
+                            <i id="star-five" class="fa-regular fa-star stars"></i>
+                        </div>
+                        <div id="rat-desc" class="ratings-description">
+                        </div>
+
+                    </div>
+                    <div class="label">
+                        <textarea name="message" id="message" placeholder="Describe Your Experience"></textarea>
+                    </div>
+                    <div class="error" id="errorM"></div>
+                    <div class="label">
+                        <input type="button" id="submit" value="Send" class="submit">
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <!-- End of Contact Form -->
+
+            <!-- More Contact Information -->
+            <div class="more-info">
+                <div class="more-info-heading">
+                    <h5 style="color: white; padding: 5px 40px;">Contact Info</h5>
+                </div>
+                <div class="information">
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-location-dot"></i><span
+                            style="margin-left: 20px;">ABC street, Karachi</span> </p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-phone"></i> <a
+                            class="info-link" href="tel:+92%73454%3280">+92 73454 3280</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-fax"></i> <a
+                            class="info-link" href="tel: +123%4446%8889">+123 4446 8889</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-envelope"></i> <a
+                            class="info-link" href="mailto:sportsinfo@gmail.com">sportsinfo@gmail.com</a></p>
+                </div>
+            </div>
+            <!-- End of More Contact Information -->
+        </div>
+    </section>
+    <!-- Modal on form submit -->
+    <div id="pop" class="popup">
+        <div class="popup-content py-5">
+            <h3>Thank You For Contacting Us!</h3>
+            <button id="ok" class="popup-btn mt-3">OK</button>
+        </div>
+    </div>
+    <div class="overlay" id="blur"></div>
+    <!-- End Of Modal On Form Submit -->
+
+    <!-- END OF CONTACT INFORMATION -->
+
+    <!-- GOOGLE MAP -->
+    <section class="map-section">
+        <div class="map-heading">
+            <h1 style="color: #0DA1FF; ">Map</h1>
+        </div>
+        <div class="container">
+            <div id="map"></div>
+        </div>
+
+    </section>
+    <!-- END OF GOOGLE MAPS -->
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer" class="footer-container">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-lg-3 ps-3 py-4 footer-section">
+                    <h2>SPORTS <span style="color:#0DA1FF ;">INFO</span></h2>
+                    <p class="pt-3" style="text-align: justify; font-size: 13px; opacity: 0.7;">Infocom is a multi
+                        national company that builds informative sites. <br><span
+                            style="color:#0DA1FF ;">sportsinfo.com</span> is the platform where the user will get
+                        information related to sports.</p>
+                </div>
+
+                <div class="col-12 col-lg-3 py-4 ps-lg-4  footer-section">
+                    <h5 class="ps-lg-4">TOP <span style="color:#0DA1FF ;">SPORTS</span></h5>
+                    <ul class="ps-0 ps-lg-4">
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html"
+                                id="fFootball">Football</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html"
+                                id="fCricket">Cricket</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html"
+                                id="fTennis">Tennis</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html"
+                                id="fAthletics">Athletics</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html" id="fGolf">Golf</a>
+                        </li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/sports.html"
+                                id="fSwimming">Swimming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 ps-lg-4 py-4 footer-section">
+                    <h5>TOP <span style="color:#0DA1FF ;">PLAYERS</span></h5>
+                    <ul class="ps-0 ps-lg-1">
+
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html"
+                                id="fRonaldo">Ronaldo</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html"
+                                id="fTendulkar">Tendulkar</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html"
+                                id="fFederer">Federer</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html" id="fBolt">Bolt</a>
+                        </li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html" id="fTiger">Tiger
+                                Woods</a></li>
+                        <li class="footer-list"><a class="footer-links" href="../PAGES/players.html"
+                                id="fMarquez">Marquez</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 py-4">
+                    <h5>CONTACT <span style="color:#0DA1FF ;">INFO</span> </h5>
+                    <p class="pt-3" style="color: white; font-size: 14px; opacity: 0.7;"><i style="color: #0DA1FF;"
+                            class="fa-solid fa-envelope"></i> <a style="color: white;" class="info-link"
+                            href="mailto:sportsinfo@gmail.com">sportsinfo@gmail.com</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-location-dot"></i><span
+                            style="margin-left: 20px; opacity: 0.7; font-size: 13px;">ABC street, Karachi</span> </p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-phone"></i> <a
+                            class="info-link" href="tel:+92%73454%3280">+92 73454 3280</a></p>
+                    <p style="color: white;"><i style="color: #0DA1FF;" class="fa-solid fa-fax"></i> <a
+                            class="info-link" href="tel: +123%4446%8889">+123 4446 8889</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="pb-4 mb-0" style="text-align: center; opacity: 0.7;">All Rights Reserved by &#169; sportsinfo 2022</p>
+    </footer>
+    <!-- END OF FOOTER SECTION -->
+
+    <!-- JAVASCRIP LINKS -->
+    <script src="../JS/index.js"></script>
+    <script src="../JS/contact.js"></script>
+    <script src="../BOOTSTRAP/bootstrap.min.js"></script>
+
+
+    <!-- GOOGLE MAP API -->
+    <script>
+        function initMap() {
+            var myLatLon = new google.maps.LatLng(24.8873, 67.1520)
+            var mapProp = {
+                center: myLatLon,
+                zoom: 17,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myLatLon
+            })
+            marker.setMap(map)
+        }
+
+
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9VKUCYbk71ABSZheLvOwPghCN3fcf7AM&callback=initMap&v=weekly"></script>
+    <!-- END OF GOOGLE MAP API -->
+
+</body>
+
+</html>
